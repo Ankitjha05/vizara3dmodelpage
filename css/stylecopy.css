@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+body {
+    overflow-x: hidden !important;
+}
+
+img {
+    /* max-width: 100%; */
+    width: 100%;
+    /* height: auto; */
+    object-fit:contain;
+    /* background-repeat: no-repeat; */
+    aspect-ratio: auto 4/3;
+}
+
+.imgproductdiv {
+    box-sizing: border-box;
+    /* margin-left: 15px; */
+    width: 390.92px;
+    /* height: 320px; */
+    height: fit-content;
+    top: 20px;
+    border: 0.02px solid #121212;
+    border-radius: 8px;
+    margin-right: 0;
+    margin-bottom: 6px;
+    overflow: hidden;
+    aspect-ratio: auto 4/3;
+}
+
+
+/* .imgproductdiv {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 34.37% 0 0 0;
+} */
+
+/* Create a pseudo element that uses padding-bottom to take up space */
+/* .imgproduct::after {
+    display: block;
+    content: '';
+    16:9 aspect ratio
+    padding-bottom: 56.25%;
+} */
+
+/* Image is positioned absolutely relative to the parent element */
+/* .imgproductdiv img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+
+button {
+    cursor: pointer;
+}
+
+.headingsection {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: 10%;
+}
+
+.webar {
+    width: 167px;
+    height: 77px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000000;
+}
+
+.headingcontent {
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+.desc {
+    width: 50vw;
+    height: auto;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
+}
+
+.imageval {
+    margin-right: 20px;
+    max-width: 519px;
+    /* height: auto; */
+}
+
+.imageheading {
+    width: auto;
+    height: auto;
+
+}
+
+.productsection {
+    display: flex;
+    margin-right: 6vw;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+
+}
+
+.product {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.allproducts {
+    margin-left: 6vw;
+    margin-top: 10rem;
+}
+
+.productname {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.productdesc {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 7px;
+    color: #000000;
+
+}
+
+.productbox {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(18, 18, 18, 0.12);
+    border-radius: 12px;
+    max-width: 411px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#product1 {
+    /* margin-left: 0; */
+    margin-left: 2.5vw;
+    margin-right: auto;
+}
+
+
+#product2 {
+    margin-left: 95px;
+    margin: auto;
+}
+
+#product3 {
+    margin-left: 95px;
+    margin-right: 40px;
+    margin: auto;
+}
+
+.buttonval {
+    width: 177px;
+    height: 38px;
+    background: #2B7DBB;
+    border-radius: 8px;
+    margin-left: 15px;
+    color: white;
+    border: none;
+    float: right;
+}
+
+.productboxdiv {
+    margin: 2px;
+}
+
+
+@media screen and (max-width: 1506px) {
+
+    #product3 {
+        margin-right: auto;
+        margin-left: 20px;
+
+    }
+
+    #product2 {
+        margin-right: auto;
+        margin-left: 20px;
+        /* margin-left: 95px; */
+    }
+
+    .productbox {
+        width: 320px;
+    }
+
+    .imgproductdiv {
+        /* width: 309.92px; */
+        width: 310px;
+        margin-left: 3px;
+    aspect-ratio: auto 4/3;
+    }
+
+    .imageval {
+        /* margin-right: 20px; */
+        max-width: 434px;
+    }
+}
+
+/* * {
+    outline: solid 1px red;
+} */
+
+@media screen and (max-width: 600px) {
+
+    .productsection {
+        display: flex;
+        flex-direction: column;
+        margin-left: -9px;
+    }
+
+    .buttonval {
+        /* width: 130px; */
+        width: 21vw;
+        height: 30px;
+    }
+
+    #product1 {
+        margin-left: 0;
+        /* width: 98vw; */
+        margin-right: 2vw;
+    }
+
+    #product2 {
+        margin-left: 0;
+        margin-bottom: 20px;
+        /* width: 98vw; */
+    }
+
+    #product3 {
+        margin-left: 0;
+        margin-bottom: 10px;
+        /* width: 98vw; */
+    }
+
+    .imgproductdiv {
+        /* width: 309.92px; */
+        /* width: 203vw; */
+        width: 402vw;
+        margin-left: 3px;
+        margin-right: 0.4rem;
+    }
+
+    .productboxdiv {
+        display: flex;
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+
+    .productbox {
+        /* width: 328px;
+        height: 173px;
+        left: 16px; */
+        /* width: 100vw; */
+        width: 88vw;
+        /* height: 264px; */
+        /* max-height: 450px; */
+        /* max-height: 50vh; */
+        left: 16px;
+    }
+
+    .productname {
+        width: auto;
+        height: auto;
+        margin-bottom: 0;
+        font-size: 17px;
+        font-weight: 100;
+    }
+
+    .productdesc {
+        /* width: auto; */
+        /* height: auto; */
+        /* max-width: 42vw; */
+        /* max-height: 48vh; */
+        /* max-height: 18vh; */
+        max-height: 14vh;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 22px;
+        margin-bottom: 7px;
+        line-height: 1.2;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    .headingsection {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .desc {
+        padding: 0;
+        /* width: auto; */
+        /* width: 100vw; */
+        /* width: 94vw; */
+        width: 92vw;
+        height: auto;
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 38px;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    .headingcontent {
+        padding: 0;
+    }
+
+    .imageheading {
+        margin-left: 20px;
+        /* width: 103vw; */
+        /* width: 98vw; */
+        width: 93vw;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .imageval {
+        /* margin-right: 60px; */
+        max-width: -webkit-fill-available;
+        margin-right: 0;
+    }
+
+    .productsection {
+        display: flex;
+        margin-right: 0;
+    }
+}

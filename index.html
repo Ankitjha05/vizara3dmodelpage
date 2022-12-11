@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style3d.css">
+    <link rel="stylesheet" href="css/stylecopy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+</head>
+
+<body>
+
+    <div class="headingsection">
+        <div class="headingcontent">
+            <p class="webar">
+                Web AR
+            </p>
+            <p class="desc">Web-based augmented reality (webAR) is a technology that allows users to access AR
+                experiences
+                directly from
+                their smartphones. As there's no need for any downloading, people can enjoy the immersive and unique
+                experience
+                of AR on-demand, on most operating systems, mobile devices, and web browser.
+            </p>
+        </div>
+        <div class="imageheading">
+            <img class="imageval" src="media/image 4.png" alt="">
+        </div>
+    </div>
+
+    <div class="allproducts">
+        <p class="product">Products</p>
+
+        <div class="productsection">
+            <div class="productbox" id="product1">
+
+                <div class="modelviewclass1">
+                    <model-viewer id="modelview" class="modelviewclass hiden" src="media/JD-BH-01-002.glb" ar
+                        ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster2.webp"
+                        shadow-intensity="1">
+                        <span id="cross1" class="modelcross"
+                            style='font-size:16px; padding: 16px;float: right;'>&#10005;</span>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in AR space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="media/ar_hand_prompt.png">
+                        </div>
+                    </model-viewer>
+                </div>
+                <div class="productboxdiv">
+                    <!-- <img id="imgproduct1" class="imgproduct" src="media/temple.png" alt=""> -->
+                    <div class="imgproductdiv">
+                        <img class="productimages" src="media/temple (2).png" alt="">
+                    </div>
+                    <div class="productcontent">
+                        <p id="productname1" class="productname">Lotus Mahal</p>
+                        <p id="productdesc1" class="productdesc">The central dome of this structure is carved as a lotus
+                            bud.
+                            Owing
+                            to
+                            its resemblance to
+                            a Lotus, this Mahal
+                            is also called the Kamal Mahal or Chitrangani Mahal.The curves and arches follow an Islamic
+                            architecture
+                            style, while the multi-layered roof design is prevalent in the Indian style of buildings.
+                            The
+                            Lotus
+                            Mahal is
+                            ideal as an ethnic Indian gift a heritage memento
+                        </p>
+                        <button class="buttonval" id="prodbtn1" onclick="display360(modelview)">View in 360°</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productbox" id="product2">
+                <div class="modelviewclass2">
+                    <model-viewer id="modelview2" class="modelviewclass hiden"
+                        src="media/KVT_Structure_AR_APP(texture).glb" ar ar-modes="webxr scene-viewer quick-look"
+                        camera-controls poster="poster.webp" shadow-intensity="1">
+                        <span id="cross2" class="modelcross"
+                            style='font-size:16px; padding: 16px;float: right;'>&#10005;</span>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in AR space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="media/ar_hand_prompt.png">
+                        </div>
+                    </model-viewer>
+                </div>
+
+                <div class="productboxdiv">
+                    <!-- <img class="imgproduct" src="media/KVT image.png" alt=""> -->
+                    <div class="imgproductdiv">
+                        <img class="productimages" src="media/KVT_.jpg" alt="">
+                    </div>
+                    <div>
+                        <p id="productname2" class="productname">Kashi Vishwanath Temple</p>
+                        <p id="productdesc2" class="productdesc">The main shrine complex of Shri Kashi Vishwanath
+                            Temple,
+                            located in
+                            Varanasi, Uttar
+                            Pradesh.Shri Kashi Vishwanath Temple is one of the most famous Hindu temples dedicated to
+                            Lord
+                            Shiva.
+                            The
+                            temple stands on the western banks of the holy river Ganga and is one of the Jyotirlingas –
+                            The
+                            holiest
+                            of
+                            Shiva Temples. The monument has been standing resolute in the city of Varanasi.
+                        </p>
+                        <button id="prodbtn2" class="buttonval" onclick="display360(modelview2)">View in 360°</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productbox" id="product3">
+                <div class="modelviewclass3">
+                    <model-viewer id="modelview3" class="modelviewclass hiden" src="media/JD-BH-01-004.glb" ar
+                        ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster3.webp"
+                        shadow-intensity="1">
+                        <span id="cross3" class="modelcross"
+                            style='font-size:16px; padding: 16px;float: right;'>&#10005;</span>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in AR space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="media/ar_hand_prompt.png">
+                        </div>
+                    </model-viewer>
+                </div>
+                <div class="productboxdiv">
+                    <!-- <img class="imgproduct" src="media/Hampi image.png" alt=""> -->
+                    <div class="imgproductdiv">
+                        <img class="productimages" src="media/hampi_.jpg" alt="">
+                    </div>
+                    <div>
+                        <p id="productname3" class="productname">Hampi Stone Chariot</p>
+                        <p id="productdesc3" class="productdesc">It is a famous Stone Chariot of Hampi in Karnataka, a
+                            UNESCO
+                            World
+                            heritage site in
+                            India.Stone Chariot is located inside the premises of the Vijaya Vittala temple at Hampi.
+                            Lord
+                            Vittala
+                            is an
+                            avatar of Indian god Vishnu, and this chariot is a shrine of Lord Garuda (a mythological
+                            figure
+                            with
+                            a
+                            human
+                            body and head of a large, legendary bird), who is the ‘Vahana’ or vehicle of Lord Vishnu.
+                        </p>
+                        <button id="prodbtn3" class="buttonval" onclick="display360(modelview3)">View in 360°</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobilescript.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>
